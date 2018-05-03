@@ -7,6 +7,8 @@ from django.views import View
 from haystack.views import SearchView
 from pure_pagination import PageNotAnInteger, Paginator
 from django.shortcuts import render, get_object_or_404
+from blogs.settings import HAYSTACK_SEARCH_RESULTS_PER_PAGE
+from blog.forms import CommentForm
 
 
 # Create your views here.
