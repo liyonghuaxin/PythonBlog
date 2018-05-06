@@ -4,9 +4,10 @@
 
 配置虚拟环境
 
-pip install mysqlclient
-[PyMySQL/mysqlclient-python](https://github.com/PyMySQL/mysqlclient-python)
-[libmysqlclient-dev安装失败](https://otland.net/threads/libmysqlclient-dev-debian-stretch.253851/) 解决 apt-get install default-libmysqlclient-dev
+pip install mysqlclient  
+[PyMySQL/mysqlclient-python](https://github.com/PyMySQL/mysqlclient-python)  
+[libmysqlclient-dev安装失败](https://otland.net/threads/libmysqlclient-dev-debian-stretch.253851/)  
+解决 apt-get install default-libmysqlclient-dev  
 
 pip install markdown
 
