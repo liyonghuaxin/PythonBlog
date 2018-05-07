@@ -5,7 +5,7 @@
 * pip install django-haystack
 * pip install django_pure_pagination
 * pip install whoosh django-haystack jieba
-* pip install mysqlclient  
+* pip install mysqlclient  
 [PyMySQL/mysqlclient-python](https://github.com/PyMySQL/mysqlclient-python)  apt-get install python-dev libmysqlclient-dev  
 [libmysqlclient-dev安装失败](https://otland.net/threads/libmysqlclient-dev-debian-stretch.253851/)  解决 apt-get install default-libmysqlclient-dev  
 * pip install markdown
