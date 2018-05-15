@@ -80,6 +80,10 @@ ps -ef | grep nginx    查看nginx进程
 uwsgi --version   # 查看 uwsgi 版本  
 
 ps ax | grep uwsgi    查看uwsgi进程  
+-a  显示所有终端机下执行的进程，除了阶段作业领导者之外。  
+a  显示现行终端机下的所有进程，包括其他用户的进程。  
+u 　以用户为主的格式来显示进程状况。  
+x 　显示所有进程，不以终端机来区分  
 
 在uwsgi9090.ini所在目录运行uwsgi --ini uwsgi9090.ini启动django项目  
 其它相关命令 nohup uwsgi --ini uwsgi9090.ini& &nbsp; &nbsp; tail -f -n 1000 nohup.out  
@@ -88,7 +92,6 @@ ps ax | grep uwsgi    查看uwsgi进程
 uwsgi --ini uwsgi.ini             # 启动  
 uwsgi --reload uwsgi.pid          # 重启  
 uwsgi --stop uwsgi.pid            # 关闭  
-
 
 
 
