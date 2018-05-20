@@ -42,11 +42,13 @@ Web开发除了掌握最基础的Web框架，还需要掌握常用的Web功能�
 [Setting up Django and your web server with uWSGI and nginx](http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html?highlight=nginx)  
 [Django 安全配置(setting.py)详解](https://segmentfault.com/a/1190000003756582)  
 #### 遇到的问题
-[解决Django Admin管理界面样式表(CSS Style)丢失问题](http://wangye.org/blog/archives/572/)  
+[解决Django Admin管理界面样式表(CSS Style)丢失问题](http://wangye.org/blog/archives/572/)  
+1. 修改settings.py中STATIC_ROOT  
+2. python manage.py collectstatic  
 
-测试uWSGI启动django时，权限不同  
-uwsgi --socket mysite.sock --module demo.wsgi --chmod-socket=666 成功  
-uwsgi --socket mysite.sock --module demo.wsgi --chmod-socket=664 失败了  
+测试uWSGI启动django时，权限不同  、
+uwsgi --socket mysite.sock --module demo.wsgi --chmod-socket=666 成功  、
+uwsgi --socket mysite.sock --module demo.wsgi --chmod-socket=664 失败了  
 
 配置文件uwsgi.ini
 note-site = true 访问失败显示 Internal Server Error
